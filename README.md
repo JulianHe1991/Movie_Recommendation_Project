@@ -42,22 +42,23 @@ The data was analyzed on many fronts. First in order to understand how well movi
 ![](Images/correlation_1.PNG) ![](Images/correlation_2.PNG)
 
 After seeing the correlation matrix, a baseline model was fit on our training data. A normal predictor was used as the baseline. This assigns a random rating for a movie based off a normal distribution for the movie around the mean. The RMSE for this model was 1.42. 
+
 Next, we tried a number of different models with base settings to see which we would like to invest time grid searching hyper-parameters. These models were SVD(Singular Value Decomposition), NMF (Non-Matrix Factorization), KNN Baseline, KNN Basic, and Baseline Only. From these models SVD, NMF, and KNN Basic were chosen for grid searching. A large range was initially used for each parameter and then investigated more closely for each model. SVD was the best performing of these models in terms of Root Mean Square Error and was chosen as our final model. 
 
 ![](https://github.com/JulianHe1991/Movie_Recommendation_Project/blob/Julian/Images/recommendation.PNG)
 <br>
 
 ## **Conclusions**
-
+Our recommendation system utilzied a collaborative-based model to make predictions based on users' previous ratings. Our best model had a RMSE of 0.88, meaning our predictions will be off by 0.88 points on average. This is 38% better than our baseline model, which has a RMSE of 1.43. We believe that our model would improve your customers' experience using Netflix.
 
 <br>
 
 ## **Next Steps**
 1. **Seasonality:** to further enhance our model, we would like to incorporate time series data into our datasets so that we could study and identify seasonal pattern for movie recommendations for our subscribers. 
 
-2. **Current Events:** We would like to add another parameter for our model, which recommmends movies based on current events.
+2. **Time of day:** the time of day people are searching for new content may influence the recommendations they should receive. For example, what people like to watch at 2pm vs. 9pm vs. 2am may be different, and our recommendation system should account for that. 
 
-3. **Demographics:** We'd also like to learn and utilize the factor of demographic differences and see how it plays in our recommendation system. 
+3. **Bingeability:** having an idea of how long a user stays on Netflix once they are engaged will lead to a different recommendations. Therefore, if people stay on the platform for a long time, we can recommend more “mind-numbing” movies whereas if people typically engage with the product for a lesser time we want to recommend something that is higher quality but leaves a lasting impression.
 
 <br>
 
