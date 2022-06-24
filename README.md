@@ -39,13 +39,12 @@ Questions to consider:
 ### **Modeling Result**
 The data was analyzed on many fronts. First in order to understand how well movies certain movie ratings are correlated we conducted a simple correlation matrix between users and movie ratings. This provided the basis for our model moving forward. As seen in the Bourne Identity example, the movies that were most correlated were the other movies in the Bourne trilogy. However, there were some movies that also correlated strongly that were surprising. Such as The Santa Clause.
 
-
-![](https://github.com/JulianHe1991/Movie_Recommendation_Project/blob/Julian/Images/recommendation.PNG)
-
+![](Images/correlation_1.PNG) ![](Images/correlation_2.PNG)
 
 After seeing the correlation matrix, a baseline model was fit on our training data. A normal predictor was used as the baseline. This assigns a random rating for a movie based off a normal distribution for the movie around the mean. The RMSE for this model was 1.42. 
 Next, we tried a number of different models with base settings to see which we would like to invest time grid searching hyper-parameters. These models were SVD(Singular Value Decomposition), NMF (Non-Matrix Factorization), KNN Baseline, KNN Basic, and Baseline Only. From these models SVD, NMF, and KNN Basic were chosen for grid searching. A large range was initially used for each parameter and then investigated more closely for each model. SVD was the best performing of these models in terms of Root Mean Square Error and was chosen as our final model. 
 
+![](https://github.com/JulianHe1991/Movie_Recommendation_Project/blob/Julian/Images/recommendation.PNG)
 <br>
 
 ## **Conclusions**
