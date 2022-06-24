@@ -40,7 +40,7 @@ Questions to consider:
 The data was analyzed on many fronts. First in order to understand how well movies certain movie ratings are correlated we conducted a simple correlation matrix between users and movie ratings. This provided the basis for our model moving forward. As seen in the Bourne Identity example, the movies that were most correlated were the other movies in the Bourne trilogy. However, there were some movies that also correlated strongly that were surprising. Such as The Santa Clause.
 
 
-![](Images/https://raw.githubusercontent.com/JulianHe1991/Movie_Recommendation_Project/Julian/recommendation.png)
+![](https://github.com/JulianHe1991/Movie_Recommendation_Project/blob/Julian/Images/recommendation.PNG))
 
 
 After seeing the correlation matrix, a baseline model was fit on our training data. A normal predictor was used as the baseline. This assigns a random rating for a movie based off a normal distribution for the movie around the mean. The RMSE for this model was 1.42. 
