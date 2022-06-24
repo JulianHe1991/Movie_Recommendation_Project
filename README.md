@@ -19,7 +19,7 @@ First let’s look at this chart of distribution of movie ratings, where majorit
 
 <br>
 
-This is another findings about average rating for each genre. Compared to the average rating of 3.58, film-noir, war, and documentary are likely to receive higher score on average. Crime, drama, mystery, animation, IMAX are among second tier that are rated abover average level. 
+This is another findings about average rating for each genre. Compared to the average rating of 3.58, **Flim-Noir**, **War**, and **Documentary** are likely to receive higher score on average. **Crime, Drama, Mystery, Animation, IMAX**, and **Western** are among second tier that are rated abover average level. 
 
 ![](Images/genre_ratings_bar.png)
 
@@ -36,7 +36,7 @@ Questions to consider:
 * Why are these choices appropriate given the data and the business problem?
 ***
 
-### **Modeling Result**
+### **Modeling & Recommendation Result**
 The data was analyzed on many fronts. First in order to understand how well movies certain movie ratings are correlated we conducted a simple correlation matrix between users and movie ratings. This provided the basis for our model moving forward. As seen in the Bourne Identity example, the movies that were most correlated were the other movies in the Bourne trilogy. However, there were some movies that also correlated strongly that were surprising. Such as The Santa Clause.
 
 ![](Images/correlation_1.PNG) ![](Images/correlation_2.PNG)
@@ -83,3 +83,4 @@ Github:
 - Juliet Day: [github](https://github.com/julietday422)
 
 - Xibei (Julian) He: [github](https://github.com/JulianHe1991)
+
