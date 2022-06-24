@@ -21,7 +21,7 @@ First let’s look at this chart of distribution of movie ratings, where majorit
 
 This is another findings about average rating for each genre. Compared to the average rating of 3.58, **Flim-Noir**, **War**, and **Documentary** are likely to receive higher score on average. **Crime, Drama, Mystery, Animation, IMAX**, and **Western** are among second tier that are rated abover average level. 
 
-![](Images/genre_ratings_bar.png)
+![](Images/genre_ratings_bar_new.png)
 
 <br>
 
