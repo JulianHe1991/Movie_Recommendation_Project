@@ -4,40 +4,35 @@
 
 ![](https://t4.ftcdn.net/jpg/03/71/56/17/360_F_371561715_LVI4qVJ2hyWMDXdqJNGdktggEzjQuC15.jpg)
 
+## **Overview**
+The goal to be achieved in this project is to build a quantitative model to generate top 5 movie recommendations for any user. The data we used includes roughly 100,000 ratings across 610 unique users. We utilized a collaborative system so the model would make it's predictions based on user's ratings on other movies. We are presenting our final product to Netflix Recommendation Solution Team, lead by tech supervisor and CTO who oversee the application of algorithms in Netflix's recommendation system.
+
+<br>
+
 ## **Business Understanding**
 Business Understanding: As of 2022, Netflix had a total of 222 million paid members globally. With many accounts having multiple people per household using one account, that would mean many more users. A study in 2016 found that the average person in the United States spends approximately 23 minutes a day trying to find something to watch. “Breaking that down even further, that works out to be 474 days of unsatisfying, desperate attempts to find anything to satiate the need for new programming before returning to Friends for the hundredth time.” With a total of 6 billion hours of streaming per month on Netflix and a shocking 474 days of searching for shows to watch per person in their lifetime, it is imperative that customers have custom recommendations based on their favorite previously watched shows and movies. The aim of this project is to create a recommendation system that would customize the user’s recommendations based on their previous ratings.
 
 <br>
 
 ## **Data Understanding** 
-The data we used for this project is from Grouplens. The datasets contains 100,830 ratings on over 9,700 movies, posted by 610 users. There are also 3,600 tags related to these movies. The release year of movies recorded are from 1995 - 2018. We will set rating as our target variable in developing recommendation model.
+The data we used for this project is from Grouplens. The datasets contains 100,830 ratings on over 9,700 movies, posted by 610 users. There are also 3,600 tags related to these movies. The release year of movies recorded are from 1995 - 2018. We will set "rating" as our target variable in developing recommendation model.
 
 ### **EDA**
-First let’s look at this chart of distribution of movie ratings, where majority of ratings are centered around 3 and 4. And you can tell that people are generally nice where roughly 70% of them rated score of 3 or above. 
+First let’s look at this chart of distribution of movie ratings, where the majority of ratings are centered around 3 and 4. Further, roughly 70% of the ratings are a 3 or above. 
 
 ![](Images/movie_ratings.png)
 
 <br>
 
-This is another findings about average rating for each genre. Compared to the average rating of 3.58, **Flim-Noir**, **War**, and **Documentary** are likely to receive higher score on average. **Crime, Drama, Mystery, Animation, IMAX**, and **Western** are among second tier that are rated abover average level. 
+This second graph shows the average rating for each genre. Compared to the average rating of 3.58, **Flim-Noir**, **War**, and **Documentary** are likely to receive a higher score on average. **Crime, Drama, Mystery, Animation, IMAX**, and **Western** are among the second tier rated above-average. 
 
 ![](Images/genre_ratings_bar_new.png)
 
 <br>
 
-## **Methodology & Results**
 
-### **Data Modeling**
-Describe and justify the process for analyzing or modeling the data.
-***
-Questions to consider:
-* How did you analyze or model the data?
-* How did you iterate on your initial approach to make it better?
-* Why are these choices appropriate given the data and the business problem?
-***
-
-### **Modeling & Recommendation Result**
-The data was analyzed on many fronts. First in order to understand how well movies certain movie ratings are correlated we conducted a simple correlation matrix between users and movie ratings. This provided the basis for our model moving forward. As seen in the Bourne Identity example, the movies that were most correlated were the other movies in the Bourne trilogy. However, there were some movies that also correlated strongly that were surprising. Such as The Santa Clause.
+## **Data Modeling & Recommendation Result**
+The data was analyzed on many fronts. First, we conducted a simple correlation matrix between users and movie ratings to understand how well specific movie ratings are correlated. This provided the basis for our model moving forward. As seen in the Bourne Identity example, the movies that were most correlated were the other movies in the Bourne trilogy. However, there were some movies that we were surprised to find were strongly correlated, such as "The Santa Clause".  
 
 ![](Images/correlation_1.PNG) ![](Images/correlation_2.PNG)
 
@@ -49,7 +44,7 @@ Next, we tried a number of different models with base settings to see which we w
 <br>
 
 ## **Conclusions**
-Our recommendation system utilzied a collaborative-based model to make predictions based on users' previous ratings. Our best model had a RMSE of 0.88, meaning our predictions will be off by 0.88 points on average. This is 38% better than our baseline model, which has a RMSE of 1.43. We believe that our model would improve your customers' experience using Netflix.
+Our recommendation system utilized a collaborative-based model to make predictions based on users' previous ratings. Our best model had a RMSE of 0.88, meaning our predictions will be off by 0.88 points on average. This is 38% better than our baseline model, which has a RMSE of 1.43. We believe that our model would improve your customers' experience using Netflix.
 
 <br>
 
